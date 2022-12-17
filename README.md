@@ -3,7 +3,7 @@ Tugas Besar Struktur Data SE4503
 
 # Kelompok 21
 
-# Nama Anggota :
+Nama Anggota :
 
 Muhamad Iqbal Faturohman
 1302200016
