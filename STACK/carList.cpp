@@ -54,12 +54,13 @@ void printStack(carList S)
 {
     for(int i = S.top; i >= 0; i--)
     {
+        std::cout << "=================CAR LIST=================\n";
         std::cout << "Brand Mobil : " << S.info[i].brandCar << std::endl;
         std::cout << "Nama Mobil : " << S.info[i].nameCar << std::endl;
         std::cout << "Tipe Mobil : " << S.info[i].typeCar << std::endl;
         std::cout << "Tahun : " << S.info[i].yearCar << std::endl;
         std::cout << "Harga : " << S.info[i].priceCar << std::endl;
-        std::cout << "----------------------------------------\n";
+        std::cout << "==========================================\n";
     }
 }
 int searchInfo(carList S, infoCar x)
