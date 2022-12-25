@@ -28,7 +28,7 @@ bool isFull(carList S);
 void push(carList &S, infoCar x);
 infoCar pop(carList &S);
 void printStack(carList S);
-int searchInfo(carList S, infoCar x);
+int searchCarByBrand(carList S, infoCar x);
 void sortCarByPrice(carList &S);
 void sortCarByYear(carList &S);
 int countStack(carList S);
