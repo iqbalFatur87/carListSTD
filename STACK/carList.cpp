@@ -54,7 +54,6 @@ void printStack(carList S)
 {
     for(int i = S.top; i >= 0; i--)
     {
-        std::cout << "=================CAR LIST=================\n";
         std::cout << "Brand Mobil : " << S.info[i].brandCar << std::endl;
         std::cout << "Nama Mobil : " << S.info[i].nameCar << std::endl;
         std::cout << "Tipe Mobil : " << S.info[i].typeCar << std::endl;
@@ -79,4 +78,49 @@ int searchInfo(carList S, infoCar x)
         }
     }
     return -1;
+}
+void sortCarByPrice(carList &S)
+{
+    infoCar temp;
+    for(int i = 0; i <= S.top; i++)
+    {
+        for(int j = i + 1; j <= S.top; j++)
+        {
+            if(S.info[i].priceCar > S.info[j].priceCar)
+            {
+                temp = S.info[i];
+                S.info[i] = S.info[j];
+                S.info[j] = temp;
+            }
+        }
+    }
+}
+void sortCarByYear(carList &S)
+{
+    infoCar temp;
+    for(int i = 0; i <= S.top; i++)
+    {
+        for(int j = i + 1; j <= S.top; j++)
+        {
+            if(S.info[i].yearCar > S.info[j].yearCar)
+            {
+                temp = S.info[i];
+                S.info[i] = S.info[j];
+                S.info[j] = temp;
+            }
+        }
+    }
+}
+int countStack(carList S)
+{
+    int count = 0;
+    for(int i = 0; i <= S.top; i++)
+    {
+        count++;
+    }
+    return count;
+}
+void deleteStack(carList &S)
+{
+    S.top = -1;
 }
