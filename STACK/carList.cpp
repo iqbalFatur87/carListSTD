@@ -62,22 +62,18 @@ void printStack(carList S)
         std::cout << "==========================================\n";
     }
 }
-int searchInfo(carList S, infoCar x)
+int searchCarByBrand(carList S, infoCar x)
 {
-    int i = 0;
-    if(isEmpty(S))
-        std::cout << "Stack Telah Kosong !!!\n";
-    else
+    int index = -1;
+    for(int i = 0; i <= S.top; i++)
     {
-        while(i <= S.top && S.info[i].brandCar != x.brandCar){
-            if(S.info[i].brandCar == x.brandCar){
-                return i;
-            } else {
-                i++;
-            }
+        if(S.info[i].brandCar == x.brandCar)
+        {
+            index = i;
+            break;
         }
     }
-    return -1;
+    return index;
 }
 void sortCarByPrice(carList &S)
 {
