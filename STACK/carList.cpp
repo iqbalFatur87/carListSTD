@@ -62,19 +62,6 @@ void printStack(carList S)
         std::cout << "==========================================\n";
     }
 }
-int searchCarByBrand(carList S, infoCar x)
-{
-    int index = -1;
-    for(int i = 0; i <= S.top; i++)
-    {
-        if(S.info[i].brandCar == x.brandCar)
-        {
-            index = i;
-            break;
-        }
-    }
-    return index;
-}
 void sortCarByPrice(carList &S)
 {
     infoCar temp;
