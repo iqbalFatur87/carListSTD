@@ -58,10 +58,22 @@ int main(int argc, char const *argv[])
                 printStack(S);
                 break;
             case 4:
-                std::cout<<std::endl;
+                cout<<endl;
                 printf("Masukkan Brand Mobil : ");
                 cin >> xC.brandCar;
-                printf("Mobil %s berada pada indeks ke-%d , ke-%d, dan ke-%d\n", xC.brandCar.c_str(), searchCarByBrand(S, xC), searchCarByBrand(S, xC)+1, searchCarByBrand(S, xC)+2);
+                cout<<endl;
+                for (int i = 0; i < countStack(S); i++)
+                {
+                    if (S.info[i].brandCar == xC.brandCar)
+                    {
+                        printf("=========================================\n");
+                        printf("Nama Mobil : %s \n", S.info[i].nameCar.c_str());
+                        printf("Tipe Mobil : %s \n", S.info[i].typeCar.c_str());
+                        printf("Tahun Mobil : %d \n", S.info[i].yearCar);
+                        printf("Harga Mobil : %d \n", S.info[i].priceCar);
+                        printf("=========================================\n");
+                    }
+                }
                 break;
             case 5:
                 sortCarByPrice(S);
