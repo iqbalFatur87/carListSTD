@@ -46,12 +46,9 @@ int main(int argc, char const *argv[])
                 push(S, xC);
                 break;
             case 2:
+                cout<<endl;
                 xC = pop(S);
-                printf("Brand Mobil : %s \n", xC.brandCar.c_str());
-                printf("Nama Mobil : %s \n", xC.nameCar.c_str());
-                printf("Tipe Mobil : %s \n", xC.typeCar.c_str());
-                printf("Tahun Mobil : %d \n", xC.yearCar);
-                printf("Harga Mobil : %d \n", xC.priceCar);
+                printf("Stack Telah di Pop\n");
                 break;
             case 3:
                 std::cout << "=================CAR LIST=================\n";
