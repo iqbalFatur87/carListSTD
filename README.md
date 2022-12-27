@@ -13,7 +13,7 @@ Nama Anggota :
 - Abdillah Hasan -
 1302200020
 
-## Jenis dan Topik Tugas
+## Jenis dan Topik Tubes
 
 Stack dan Queue : Car List
 
@@ -23,6 +23,14 @@ STACK : di Branch stack-carlist [link](https://github.com/iqbalFatur87/carListST
 
 QUEUE : di Branch queue-carlist [link](https://github.com/iqbalFatur87/carListSTD/tree/queue-carlist)
 
-> Pengerjaan dan Commit Tubes ke Github menggunakan Visual Studio Code
+> *Pengerjaan dan Commit Tubes ke Github menggunakan Visual Studio Code*
 
-> Pengetesan kode program menggunakan Codeblocks
+> *Pengetesan kode program menggunakan Codeblocks*
+
+## Progress Tubes
+
+50%
+
+STACK ✅
+
+QUEUE 🔄
