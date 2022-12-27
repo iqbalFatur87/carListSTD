@@ -1,7 +1,10 @@
+https://img.shields.io/badge/C%2B%2B-TUBES-yellow
+
+
 # carListSTD
 Tugas Besar Struktur Data SE4503 
 
-# Kelompok 21
+### Kelompok 21
 
 Nama Anggota :
 
@@ -19,3 +22,6 @@ STACK : di Branch stack-carlist
 
 QUEUE : di Branch queue-carlist
 
+Pengerjaan dan Commit Tubes ke Github menggunakan Visual Studio Code
+
+Pengetesan kode program menggunakan Codeblocks
