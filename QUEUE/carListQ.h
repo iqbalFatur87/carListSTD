@@ -22,6 +22,7 @@ struct carQueue{
     adrQ tail;
 };
 
+
 void createQueue(carQueue &Q);
 adrQ alokasiQ(string platNo, string brand, string nama, string tipe, int tahun);
 void dealokasiQ(adrQ &P);
