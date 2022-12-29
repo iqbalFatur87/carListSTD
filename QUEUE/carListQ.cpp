@@ -18,22 +18,31 @@ adrQ alokasiQ(string platNo, string brand, string nama, string tipe, int tahun)
 }
 void dealokasiQ(adrQ &P)
 {
-    delete P;
+    if (P != NULL)
+    {
+        delete P;
+    } else {
+        cout << "Dealokasi gagal" << endl;
+    }
 }
 bool isEmptyQ(carQueue Q)
 {
     if (Q.head == NULL)
+    {
         return true;
-    else
+    } else {
         return false;
+    }
 }
 bool isFullQ(carQueue Q)
 {
     adrQ P = new elmCar;
     if (P == NULL)
+    {
         return true;
-    else
+    } else {
         return false;
+    }
 }
 void enqueueCar(carQueue &Q, adrQ P)
 {
@@ -41,9 +50,7 @@ void enqueueCar(carQueue &Q, adrQ P)
     {
         Q.head = P;
         Q.tail = P;
-    }
-    else
-    {
+    } else {
         Q.tail->next = P;
         Q.tail = P;
     }
@@ -52,10 +59,8 @@ void dequeueCar(carQueue &Q, adrQ &P)
 {
     if (isEmptyQ(Q))
     {
-        cout << "Queue Mobil Kosong" << endl;
-    }
-    else
-    {
+        cout << "Antrian kosong" << endl;
+    } else {
         P = Q.head;
         Q.head = Q.head->next;
         P->next = NULL;
@@ -66,10 +71,8 @@ void printCarQ(carQueue Q)
     adrQ P = Q.head;
     if (isEmptyQ(Q))
     {
-        cout << "Queue Mobil Kosong" << endl;
-    }
-    else
-    {
+        cout << "Antrian kosong" << endl;
+    } else {
         while (P != NULL)
         {
             cout << "Plat No: " << P->platNo << endl;
@@ -77,6 +80,7 @@ void printCarQ(carQueue Q)
             cout << "Nama: " << P->nama << endl;
             cout << "Tipe: " << P->tipe << endl;
             cout << "Tahun: " << P->tahun << endl;
+            cout << endl;
             P = P->next;
         }
     }
