@@ -6,7 +6,6 @@
 using namespace std;
 
 typedef struct elmCar *adrQ;
-typedef char infotypeQ;
 
 struct elmCar{
     string platNo;
