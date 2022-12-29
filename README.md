@@ -21,8 +21,6 @@ Stack dan Queue : Car List
 
 STACK : di Branch stack-carlist [link](https://github.com/iqbalFatur87/carListSTD/tree/stack-carlist)
 
-Source Code Stack [Download Disini](https://codeload.github.com/iqbalFatur87/carListSTD/zip/refs/heads/stack-carlist)
-
 QUEUE : di Branch queue-carlist [link](https://github.com/iqbalFatur87/carListSTD/tree/queue-carlist)
 
 > *Pengerjaan dan Commit Tubes ke Github menggunakan Visual Studio Code*
