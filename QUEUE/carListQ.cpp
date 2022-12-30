@@ -85,3 +85,15 @@ void printCarQ(carQueue Q)
         }
     }
 }
+
+int countElmQ(carQueue Q)
+{
+    adrQ P = Q.head;
+    int count = 0;
+    while (P != NULL)
+    {
+        count++;
+        P = P->next;
+    }
+    return count;
+}
