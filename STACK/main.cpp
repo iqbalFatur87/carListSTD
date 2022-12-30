@@ -1,6 +1,6 @@
 #include "carList.h"
 
-int main(int argc, char const *argv[])
+int main()
 {
     printf("Selamat Datang di Program Stack CarList\n");
     printf("di buat oleh : Kelompok 21\n");
@@ -17,11 +17,11 @@ int main(int argc, char const *argv[])
     {
         std::cout<<std::endl;
         printf("Menu : \n");
-        printf("1. Push\n");
-        printf("2. Pop\n");
-        printf("3. Print Stack\n");
+        printf("1. Masukkan Mobil\n");
+        printf("2. Hapus Mobil\n");
+        printf("3. Print Mobil\n");
         printf("4. Cari Mobil berdasarkan brand\n");
-        printf("5. Urutkan Mobil berdasarkan harga\n");
+        printf("5. Urutkan Mobil berdasarkan type\n");
         printf("6. Urutkan Mobil berdasarkan tahun\n");
         printf("7. Hitung Mobil\n");
         printf("8. Hapus Stack\n");
@@ -41,8 +41,6 @@ int main(int argc, char const *argv[])
                 cin >> xC.typeCar;
                 printf("Masukkan Tahun Mobil : ");
                 cin >> xC.yearCar;
-                printf("Masukkan Harga Mobil : $");
-                cin >> xC.priceCar;
                 push(S, xC);
                 break;
             case 2:
@@ -51,6 +49,7 @@ int main(int argc, char const *argv[])
                 printf("Stack Telah di Pop\n");
                 break;
             case 3:
+                cout<<endl;
                 std::cout << "=================CAR LIST=================\n";
                 printStack(S);
                 break;
@@ -64,28 +63,31 @@ int main(int argc, char const *argv[])
                     if (S.info[i].brandCar == xC.brandCar)
                     {
                         printf("=========================================\n");
-                        printf("Nama Mobil : %s \n", S.info[i].nameCar.c_str());
-                        printf("Tipe Mobil : %s \n", S.info[i].typeCar.c_str());
+                        printf("Nama Mobil : %s \n", S.info[i].nameCar);
+                        printf("Tipe Mobil : %s \n", S.info[i].typeCar);
                         printf("Tahun Mobil : %d \n", S.info[i].yearCar);
-                        printf("Harga Mobil : %d \n", S.info[i].priceCar);
                         printf("=========================================\n");
                     }
                 }
                 break;
             case 5:
-                sortCarByPrice(S);
+                cout<<endl;
+                sortCarByType(S);
                 printStack(S);
                 printf("Mobil Telah diurutkan\n");
                 break;
             case 6:
+                cout<<endl;
                 sortCarByYear(S);
                 printStack(S);
                 printf("Mobil Telah diurutkan\n");
                 break;
             case 7:
+                cout<<endl;
                 printf("Jumlah Mobil : %d\n", countStack(S));
                 break;
             case 8:
+                cout<<endl;
                 printf("Apakah anda yakin ingin menghapus Stack ?\n");
                 printf("1. Ya\n");
                 printf("2. Tidak\n");
@@ -99,9 +101,11 @@ int main(int argc, char const *argv[])
                         break;
                     }
             case 9:
+                cout<<endl;
                 printf("Terima Kasih Telah Menggunakan Program Ini\n");
                 break;
             default:
+                cout<<endl;
                 printf("Pilihan Tidak Tersedia\n");
                 break;
         }
