@@ -7,7 +7,6 @@ infoCar generateCar(string brandCar, string nameCar, string typeCar , int yearCa
     x.nameCar = nameCar;
     x.typeCar = typeCar;
     x.yearCar = yearCar;
-    x.priceCar = priceCar;
     return x;
 }
 void createStack(carList &S)
@@ -58,18 +57,17 @@ void printStack(carList S)
         std::cout << "Nama Mobil : " << S.info[i].nameCar << std::endl;
         std::cout << "Tipe Mobil : " << S.info[i].typeCar << std::endl;
         std::cout << "Tahun : " << S.info[i].yearCar << std::endl;
-        std::cout << "Harga : " << S.info[i].priceCar << std::endl;
         std::cout << "==========================================\n";
     }
 }
-void sortCarByPrice(carList &S)
+void sortCarByType(carList &S)
 {
     infoCar temp;
     for(int i = 0; i <= S.top; i++)
     {
         for(int j = i + 1; j <= S.top; j++)
         {
-            if(S.info[i].priceCar > S.info[j].priceCar)
+            if(S.info[i].typeCar > S.info[j].typeCar)
             {
                 temp = S.info[i];
                 S.info[i] = S.info[j];
