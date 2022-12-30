@@ -86,4 +86,6 @@ int main()
             break;
         }
     } while (pilihan != 6);
+
+    return 0;
 }
