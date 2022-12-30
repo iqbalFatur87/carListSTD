@@ -21,7 +21,6 @@ struct carQueue{
     adrQ tail;
 };
 
-
 void createQueue(carQueue &Q);
 adrQ alokasiQ(string platNo, string brand, string nama, string tipe, int tahun);
 void dealokasiQ(adrQ &P);
@@ -30,6 +29,6 @@ bool isFullQ(carQueue Q);
 void enqueueCar(carQueue &Q, adrQ P);
 void dequeueCar(carQueue &Q, adrQ &P);
 void printCarQ(carQueue Q);
-
+int countElmQ(carQueue Q);
 
 #endif // CARLISTQ_H_INCLUDED
