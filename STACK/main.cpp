@@ -63,8 +63,8 @@ int main()
                     if (S.info[i].brandCar == xC.brandCar)
                     {
                         printf("=========================================\n");
-                        printf("Nama Mobil : %s \n", S.info[i].nameCar);
-                        printf("Tipe Mobil : %s \n", S.info[i].typeCar);
+                        printf("Nama Mobil : %s \n", S.info[i].nameCar.c_str());
+                        printf("Tipe Mobil : %s \n", S.info[i].typeCar.c_str());
                         printf("Tahun Mobil : %d \n", S.info[i].yearCar);
                         printf("=========================================\n");
                     }
