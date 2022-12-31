@@ -19,7 +19,7 @@ Stack dan Queue : Car List
 
 ## Pengerjaan Tubes
 
-STACK : di Branch stack-carlist [link](https://github.com/iqbalFatur87/carListSTD/tree/stack-carlist)
+STACK : di Branch stack-carlist [link](https://github.com/iqbalFatur87/carListSTD/tree/stack-carlist) **CodeBlocks Version [link](https://github.com/iqbalFatur87/carListSTD/releases/tag/stack-carlist-cb)**
 
 QUEUE : di Branch queue-carlist [link](https://github.com/iqbalFatur87/carListSTD/tree/queue-carlist)
 
