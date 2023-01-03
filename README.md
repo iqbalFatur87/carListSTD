@@ -38,8 +38,8 @@ QUEUE : di Branch queue-carlist [link](https://github.com/iqbalFatur87/carListST
 
 ## Progress Tubes
 
-90%
+100%
 
 STACK ✅
 
-QUEUE 40%, ___Tahap Testing___ 🔄
+QUEUE ✅
