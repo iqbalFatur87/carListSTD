@@ -43,3 +43,8 @@ QUEUE : di Branch queue-carlist [link](https://github.com/iqbalFatur87/carListST
 STACK ✅
 
 QUEUE ✅
+
+
+## Slides PPT
+
+Link Slides PPT [Disini](https://docs.google.com/presentation/d/1FtIQxomokTO-9zpp4KzAzkeqL-NGl8pkSgVcMRfR9CM/edit?usp=sharing)
