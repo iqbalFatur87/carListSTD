@@ -47,4 +47,4 @@ QUEUE ✅
 
 ## Slides PPT
 
-Link Slides PPT [Disini](https://docs.google.com/presentation/d/1FtIQxomokTO-9zpp4KzAzkeqL-NGl8pkSgVcMRfR9CM/edit?usp=sharing)
+*Link Slides PPT* [Disini](https://docs.google.com/presentation/d/1FtIQxomokTO-9zpp4KzAzkeqL-NGl8pkSgVcMRfR9CM/edit?usp=sharing)
